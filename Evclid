@@ -1,0 +1,33 @@
+
+#include <iostream>
+#include <string>
+
+int nod (int X, int Y)
+{
+  if ( X == 0 && Y==0)
+  {
+      return X+Y;
+  }
+  else
+  {
+      if (X>Y)
+      {
+          X% = Y;
+          return X+Y;
+      }
+      else
+      {
+          Y% = X;
+          return X+Y;
+      }
+}
+void main ()
+{
+int X,Y;
+cout<< " X < ";
+cin>> X;
+cout<< " Y < ";
+cin>> Y
+cout>>  nod (X ,Y);
+return 0;
+}
